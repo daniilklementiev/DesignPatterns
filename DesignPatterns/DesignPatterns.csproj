@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Creational\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Creational Patterns\" />
+  </ItemGroup>
 </Project>
