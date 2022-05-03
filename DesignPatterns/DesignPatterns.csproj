@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="Creational\" />
+    <None Remove="Behavioral Patterns\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Creational Patterns\" />
+    <Folder Include="Behavioral Patterns\" />
   </ItemGroup>
 </Project>
