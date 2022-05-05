@@ -9,11 +9,12 @@ namespace DesignPatterns
         {
             Console.WriteLine("Desing patterns");
             Console.WriteLine("1  Creational: ");
-            Console.WriteLine("11 Singleton: ");
+            Console.WriteLine(" 11 Singleton: ");
+            Console.WriteLine(" 12 Simple Factory: ");
             Console.WriteLine("2  Behavioral: ");
-            Console.WriteLine("21 Strategy: ");
+            Console.WriteLine(" 21 Strategy: ");
             Console.WriteLine("3  Structural: ");
-            Console.WriteLine("31 Decorator: ");
+            Console.WriteLine(" 31 Decorator: ");
             String? userChoice = Console.ReadLine();
             switch(userChoice)
             {
@@ -27,6 +28,11 @@ namespace DesignPatterns
                     Console.WriteLine(obj.Moment);
                     var obj2 = CreationalPatterns.Singleton.GetInstance();
                     Console.WriteLine(obj == obj2 ? "Equals" : "Not equals");
+                    #endregion
+                    break;
+                case "12":
+                    #region Factory
+                    new CreationalPatterns.FactoryDemo().Show();
                     #endregion
                     break;
                 case "21":
