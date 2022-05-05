@@ -1,4 +1,5 @@
 ﻿using System;
+using DesignPatterns.StructuralPatterns;
 
 namespace DesignPatterns
 {
@@ -11,6 +12,8 @@ namespace DesignPatterns
             Console.WriteLine("11 Singleton: ");
             Console.WriteLine("2  Behavioral: ");
             Console.WriteLine("21 Strategy: ");
+            Console.WriteLine("3  Structural: ");
+            Console.WriteLine("31 Decorator: ");
             String? userChoice = Console.ReadLine();
             switch(userChoice)
             {
@@ -35,6 +38,11 @@ namespace DesignPatterns
                     // Название - значение
                     StrategyDemo.ShowDetails();
                     
+                    #endregion
+                    break;
+                case "31":
+                    #region Decorator
+                    new Decorator().Show();
                     #endregion
                     break;
                 default:
