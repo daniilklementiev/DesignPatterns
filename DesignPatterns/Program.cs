@@ -1,4 +1,5 @@
 ﻿using System;
+using DesignPatterns.CreationalPatterns;
 using DesignPatterns.StructuralPatterns;
 
 namespace DesignPatterns
@@ -13,6 +14,7 @@ namespace DesignPatterns
             Console.WriteLine(" 12 Simple Factory: ");
             Console.WriteLine(" 13 Factory Method: ");
             Console.WriteLine(" 14 Abstract Factory: ");
+            Console.WriteLine(" 15 Builder: ");
             Console.WriteLine("2  Behavioral: ");
             Console.WriteLine(" 21 Strategy: ");
             Console.WriteLine(" 22 Observer: ");
@@ -46,6 +48,11 @@ namespace DesignPatterns
                 case "14":
                     #region Abstract Factory
                     new CreationalPatterns.AbstractFactoryDemo().Show();
+                    #endregion
+                    break;
+                case "15":
+                    #region Builder
+                    new CreationalPatterns.BuilderDemo().Show();
                     #endregion
                     break;
                 case "21":

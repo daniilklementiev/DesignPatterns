@@ -65,8 +65,8 @@ namespace DesignPatterns.BehavioralPatterns
 
     class TextWriter : Subject
     {
-        private string _state;
-        public string State
+        private String _state;
+        public String State
         {
             get => _state;
             set
