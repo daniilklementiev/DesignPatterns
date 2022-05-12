@@ -8,6 +8,8 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             Console.WriteLine("Desing patterns");
             Console.WriteLine("1  Creational: ");
             Console.WriteLine(" 11 Singleton: ");
@@ -20,6 +22,8 @@ namespace DesignPatterns
             Console.WriteLine(" 22 Observer: ");
             Console.WriteLine("3  Structural: ");
             Console.WriteLine(" 31 Decorator: ");
+            Console.WriteLine(" 32 Bridge: ");
+            Console.WriteLine(" 33 Proxy: ");
             String? userChoice = Console.ReadLine();
             switch(userChoice)
             {
@@ -77,6 +81,17 @@ namespace DesignPatterns
                     new Decorator().Show();
                     #endregion
                     break;
+                case "32":
+                    #region Bridge
+                    new StructuralPatterns.BridgeDemo().Show();
+                #endregion
+                    break;
+                case "33":
+                    #region Proxy
+                    new StructuralPatterns.ProxyDemo().Show();
+                    #endregion
+                    break;
+
                 default:
                     Console.WriteLine("Invalid Choice 💩");
                     break;
