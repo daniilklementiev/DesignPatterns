@@ -110,7 +110,7 @@ namespace DesignPatterns.StructuralPatterns
         private readonly int OffsetY;
         private readonly int Blur;
 
-        public FillComponent(int X, int Y, int Blur)
+        public ShadowComponent(int X, int Y, int Blur)
         {
             this.OffsetX = X;
             this.OffsetY = Y;
