@@ -24,6 +24,7 @@ namespace DesignPatterns
             Console.WriteLine(" 31 Decorator: ");
             Console.WriteLine(" 32 Bridge: ");
             Console.WriteLine(" 33 Proxy: ");
+            Console.WriteLine(" 34 Composite: ");
             String? userChoice = Console.ReadLine();
             switch(userChoice)
             {
@@ -91,7 +92,11 @@ namespace DesignPatterns
                     new StructuralPatterns.ProxyDemo().Show();
                     #endregion
                     break;
-
+                case "34":
+                    #region Composite
+                    new StructuralPatterns.CompositeDemo().Show();
+                    #endregion
+                    break;
                 default:
                     Console.WriteLine("Invalid Choice 💩");
                     break;
